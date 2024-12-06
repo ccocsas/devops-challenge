@@ -44,10 +44,6 @@
 
 name: 'Terraform'
 
-defaults:
-  run:
-    working-directory: 'terraform'
-
 on:
   push:
     branches: [ "main" ]
@@ -66,6 +62,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: ./terraform
 
     steps:
     # Checkout the repository to the GitHub Actions runner
