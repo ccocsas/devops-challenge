@@ -46,7 +46,7 @@ name: 'Terraform'
 
 defaults:
   run:
-    working-directory: ${{ tf_actions_working_dir }}
+    working-directory: 'terraform'
 
 on:
   push:
